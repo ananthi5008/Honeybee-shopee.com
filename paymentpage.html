@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Form</title>
+    <link rel ="stylesheet" href="indexxxcss.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Confirm Your Payment</h1>
+        <div class ="frist-row">
+            <div class="Owner">
+                <h3>Owner</h3>
+                <div class ="input-filed">
+                    <input type ="text">
+                </div>
+            </div>
+            <div class="CVV">
+                <h3>CVV</h3>
+                <div class ="input-filed">
+                    <input type ="password">
+                </div>
+            </div>
+        </div>
+        <div class ="second-row">
+            <div class="card-number">
+                <h3>card-number</h3>
+                <div class ="input filed">
+                    <input type ="text">
+                </div>
+            </div>
+            </div>
+            <div class ="third-row">
+                <div class="Expiration Date">
+                    <h3>Expiration Date</h3>
+                    <div class="Selection">
+                    <div class="date">
+                        <select name="months" id="months">
+                         <option value="jan">Jan</option>
+                         <option value="feb">Feb</option>
+                         <option value="mar">Mar</option>
+                         <option value="apr">Apr</option>
+                         <option value="may">May</option>
+                         <option value="june">June</option>
+                         <option value="july">July</option>
+                         <option value="aug">Aug</option>
+                         <option value="sep">Sep</option>
+                         <option value="oct">Oct</option>
+                         <option value="nov">Nov</option>
+                         <option value="dec">Dec</option>
+                        </select>
+                            <select name ="Years" id="Years">
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>   
+                            </select>
+                    
+                        </div>   
+                    </div>
+                   <div class="Cards">
+                    <img src="https://brand.mastercard.com/content/dam/mccom/brandcenter/brand-history/brandhistory_mc1996_100_2x.png" width="70" height="70">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1280px-Visa_Inc._logo.svg.png " width="70" height="70" alt="">
+                    <img src="data:image/png;base64,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" width="70" height="70">
+                   </div>
+                </div>
+           </div>
+           <a href="#"class="classbtn">Confirm</a>
+        </div>
+    </body>
+</html>
