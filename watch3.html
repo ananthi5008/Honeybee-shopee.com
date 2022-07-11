@@ -1,0 +1,169 @@
+<html>
+
+<head>
+
+    <title>Honeybee Shopee product page</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="row">
+            <div class="col">
+
+                <div class="slider">
+                    <div class="product">
+
+                        <img src="file:///D:/capestone/watch3.jpg" alt="" onclick="clickme(this)" width="120" height="345">
+                        <img src="https://static.wixstatic.com/media/ac495f_9305d51ac2bc419b94045c7b741599f5~mv2.jpeg/v1/fill/w_500,h_500,al_c,q_85,usm_0.66_1.00_0.01/ac495f_9305d51ac2bc419b94045c7b741599f5~mv2.webp"  onclick="clickme(this)">
+
+                    </div>
+                    <div class="preview">
+                        <img src="file:///D:/capestone/watch3.jpg" id="imagebox" alt="" width="320" height="345">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col">
+
+                <div class="content">
+                    <p class="brand">Brand:TITAN </p>
+                    <h2>MENS SILVER CHAIN WATCH</h2>
+                    <p>Fashion Silver Chain Watch
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    
+                    <p class="Price">Price: ₹1599</p>
+                    <p>Quantity: <select name="Quantity">
+
+                            
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+
+                        </select></p>
+              
+                    <button type="button">
+                        
+                        Add to cart</button>
+
+                    <button type="button">
+                     
+                        BUY NOW </button>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="related">
+            <h2>related items</h2>
+            <div class="row">
+                <div class="columns">
+                    <div class="items">
+                        <img src="file:///D:/capestone/item1.png" alt="">
+                        <div class="details">
+                            <p>Woman Brown Solid Biker Jacket</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                            </div>
+
+                            <p>  ₹ 4000.00</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="file:///D:/capestone/item2.png" alt="">
+                        <div class="details">
+                            <p>Navy Blue Flared Palazzos</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+
+                            <p> ₹ 980.00</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="file:///D:/capestone/item3.png" alt="">
+                        <div class="details">
+                            <p>Jacquard Banarasi Dupatta</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+
+                            <p> ₹ 3110.00</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="items">
+                        <img src="file:///D:/capestone/item4.png" alt="">
+                        <div class="details">
+                            <p>Printed Straight Kurta</p>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-o"></i>
+                            </div>
+
+                            <p> ₹ 2100.00</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <script>
+        function clickme(smallImg) {
+
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src;
+
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
