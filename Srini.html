@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Login Form | CodingLab </title>
+    <link rel="stylesheet" href="file:///C:/Users/atos/Downloads/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+          
+
+  <body style="background-color:lightyellow;">
+    <div class="container">
+      <form action="#" name="bsu" onsubmit="return verify()">
+        <div class="title">Login</div>
+        <div class="input-box underline">
+          <input type="text" placeholder="Enter Your Email" name="email">
+          <div class="underline"></div>
+        </div>
+        <div class="input-box">
+          <input type="password" placeholder="Enter Your Password" name="password">
+          <div class="underline"></div>
+        </div>
+        <div class="input-box button">
+          <input type="submit" name="" value="Continue">
+        </div>
+      </form>
+        <div class="option">or Connect With Social Media</div>
+        <div class="twitter">
+          <a href="#"><i class="fab fa-twitter"></i>Sign in With Twitter</a>
+        </div>
+        <div class="facebook">
+          <a href="#"><i class="fab fa-facebook-f"></i>Sign in With Facebook</a>
+        </div>
+    </div>
+  </body>
+</html>
+
+  <script>
+      function verify(){
+               
+               var email = document.bsu.email.value;
+               var password = document.bsu.password.value;
+            
+           
+
+               if(email=="")
+               {
+                   alert("email is mandatory");
+                   document.bsu.email.focus();
+                   return false;
+               }
+
+     
+           else if(password<8)
+              {
+   
+                alert("password is mandatory");
+                document.bsu.password.focus();
+                return false;
+              }
+
+            }
+   </script>
+  </script>
+</html>

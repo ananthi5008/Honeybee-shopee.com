@@ -1,5 +1,5 @@
   
-charset "utf-7",
+charset "utf-8",
  body{
     	margin:0px;
     	padding: 0px;
@@ -34,16 +34,16 @@ font-weight: bold;
     	top: 50px;
     }
     .logo a{
-    	font-family:poppins;
+    	font-family:Arial;
     	font-weight: bold;
     	color: #2f2e41;
-    	font-size:2rem;
+    	font-size:2.5rem;
 
     	text-shadow: 2px 2px 30px rgba(0,0,0,0.2);
     	letter-spacing: 1px;
     }
     .logo font{
-        color:yellow;
+        color:gold;
     }
     .side-box{
     	position: fixed;
@@ -101,7 +101,7 @@ font-weight: bold;
     	transform: translate(-90%,-50%);
     }
     .m-text h1,h2{
-    	font-family:Roboto;
+    	font-family:Arial;
     	font-weight: bold;
     	margin: 0px;
         line-height: 60px;
@@ -115,7 +115,7 @@ font-weight: bold;
     }
     .m-text h1 font,
     .m-text h2 font{
-        color:yellow;
+        color:gold;
     }
     .m-btn{
     	width:150px;
@@ -198,16 +198,16 @@ font-size: 2rem;
     	text-shadow: 2px 2px 10px rgba(0,0,0,0.05);
     }
     .p-heading h3{
-    	font-family: myriad pro;
-    	font-weight: 700;
+    	font-family: Arial;
+    	font-weight:bold;
     	letter-spacing: 2px;
     	text-align: center;
-    	font-size:2rem;
+    	font-size:2.5rem;
     	color:black;
      
     }
     .p-heading h3 font{
-    	color:yellow;
+    	color:gold;
     }
     .product-container{
     	display: flex;
@@ -233,13 +233,13 @@ font-size: 2rem;
     }
     .p-box p{
     	color:black;
-    	font-family: myriad pro;
+    	font-family:Arial;
     	font-size: 1.5rem;
     	letter-spacing: 0.5;
     }
     .price{
     	color:black;
-    	font-family: poppins;
+    	font-family: Arial
     	font-size: 1.5rem;
 
     }
@@ -250,7 +250,7 @@ font-size: 2rem;
     	display: flex;
     	justify-content: center;
     	align-items: center;
-    	font-family:calibri;
+    	font-family:Arial;
     	left: 50%;
     	bottom: -20px;
     	transform: translateX(-50%);
@@ -291,7 +291,7 @@ font-size: 2rem;
     }
     .brand-text{
     	width:40%;
-    	font-family:myriad pro;}
+    	font-family:Arial;}
     .brand-img{
     	height: 500px;
     	width: 50%;
@@ -315,7 +315,7 @@ font-size: 2rem;
     	margin:0px;
     }
     .brand-text font{
-    	color:yellow;
+    	color:gold;
     }
     .brand-text p{
     	font-size: 1rem;
@@ -372,7 +372,7 @@ font-size: 2rem;
     	background-color:#6b60ec;
     	transition: all  ease 0.5s;
     }
-    footer{
+    header{
     	display: flex;
     	flex-direction: column;
     	justify-content: center;
@@ -383,12 +383,12 @@ font-size: 2rem;
     	background-position: center;
     	border-radius: 10px;
     }
-    footer h3{
+    header h3{
     	font-size: 2.5rem;
     	color: #202020;
     	margin:0px;
     }
-    .footer-menu{
+    .header-menu{
     	display: flex;
     	box-shadow: 2px 5px 30px rgba(0,0,0,0.1);
     	background-color: #fff;
@@ -397,13 +397,13 @@ font-size: 2rem;
     	align-items: center;
     	padding:5px 40px;
     }
-    .footer-menu li a{
+    .header-menu li a{
     	padding:5px 20px;
     	margin: 10px;
     	display: flex;
     	color:BLACK;
     }
-    .footer-menu li a:hover{
+    .header-menu li a:hover{
     	color:YELLOW;
     }
     .copyright{
@@ -498,14 +498,16 @@ font-size: 2rem;
     		font-size:1.4rem;
     		text-align: center;
     	}
-    	 .footer-menu{
+    	 .header-menu{
+                 display:flex;
     		 width:100%;
     		 margin:20px;
     		 flex-wrap: wrap;
     		 background-color:none;
     		 box-shadow: none;
     	 }
-    	 .footer-menu li a{
+    	 .header-menu li a{
+display:inline;
     		 background-color:#fff;
     		 border-radius: 20px;
     		 box-shadow:2px 2px 30px rgba(0, 0, 0, 0.1) ;
@@ -517,5 +519,3 @@ font-size: 2rem;
     	
      
     }
-
-

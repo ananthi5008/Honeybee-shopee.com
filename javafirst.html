@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<!--header--------------------->
+	<header>
+<div class="p-heading">
+		<h3>HONEYBEE <font>SHOPEE</font></h3>
+</div>
+		<!--header-menu---------------->
+		<ul class="header-menu">
+			<li><a href="file:///C:/Users/atos/Downloads/Srini.html">SIGNIN</a></li>
+
+			<li><a href="file:///C:/Users/atos/Downloads/javafirst.html">REGISTER</a></li>
+			<li><a href="file:///D:/capestone/emptyorderpage.html">ORDERS</a></li>
+<li><a href="file:///D:/capestone/empty%20cart%20page%20.html">CART</a></li>
+<li><a href="#">ACCOUNT</a></li>
+			
+		</ul>
+
+	</header>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <link href="homestyle.css" rel="stylesheet" type="text/css"/>
+        <script src="file:///D:/ATOS/jquery-3.6.0.min.js"></script> 
+        <style>
+            body{
+               font-family:arial;
+            background-color: lightyellow;
+            }
+            * {box-sizing: border-box}
+            input[type=text], input[type=password] {
+               width: 35%;
+               font-size:18px;
+               padding: 5px;
+               margin: 5px 0 12px 0;
+               display:  list-item;
+               border: 25px;
+               background-color: light yellow;
+            }
+            label{
+               font-size: 18px;
+            }
+            input[type=text]:focus, input[type=password]:focus {
+               background-color:light red;
+               outline: none;
+            }
+            hr {
+               border: 1px solid red;
+               margin-bottom: 25px;
+            }
+            button {
+               font-size: 18px;
+               font-weight: bold;
+               background-color:yellow;
+               color: black;
+               padding: 4px 10px;
+               margin: 8px 0;
+               border: 10px;
+               cursor: pointer;
+               width: 25%;
+               opacity: 0.9;
+            }
+            button:hover {
+               opacity:1;
+            }
+            .cancel {
+               padding: 4px 10px;
+               background-color: light yellow;
+            }
+            .formContainer {
+               padding: 1px;
+            }
+            .formContainer p{
+               font-size: 18px;
+            }
+            </style>
+
+             </head>
+
+            <script>
+            function verify(){
+               
+                var email = document.bsu.email.value;
+                var password = document.bsu.password.value;
+                var username = document.bsu.username.value;
+                var mobilenumber = document.bsu.mobilenumber.value;
+                var cnfpwd = document.bsu.cnfpwd.value;
+                
+            
+                if(username=="")
+                {
+                    alert("username is mandatory");
+                    document.bsu.username.focus();
+                    return false;
+                }
+
+                else if(email=="")
+                {
+                    alert("email is mandatory");
+                    document.bsu.email.focus();
+
+                    
+                }
+
+            else if(mobilenumber=="")
+               { 
+                    alert("mobilenumber is mandatory");
+                    document.bsu.mobilenumber.focus();
+                    return false;
+               }
+
+            else if(password.length <8)
+               {
+    
+                 alert("password must contain atleast 8 minimum characters and numbers");
+                 
+                 document.bsu.password.focus();
+                 return false;
+               }
+
+            else if(cnfpwd.length<8)
+               {
+                alert("confirm password should be same as password");
+                 document.bsu.cnfpwd.focus();
+                 return false;
+               }
+     }
+     function handle()
+     {
+         var AGE = parseInt(document.getElementById("AGE").value);
+         var AGE2 =  AGE+2;
+         if(AGE<18)
+         {
+             alert("age is less then the requirement");
+             document.getElementById("AGE").value
+             
+         }
+         alert(AGE2);
+       document.getElementById("AGE").value
+         return false;
+     }
+
+    </script>
+   
+    <body>
+        <form action ="register"name="bsu" onsubmit="return verify()" onchange=" handle()" >
+            <h1>Register</h1>
+            <hr>
+            
+            <label for="email:"><b>Email:</b></label>
+            <input type="text" placeholder="Enter Email" name="email" >
+            <br>
+            <label for="repeatPassword:"><b>Confirm Password:</b></label>
+<input type="password" placeholder="Confirm Password" name="cnfpwd">
+<br>
+           
+            <label for="password:"><b>Password:</b></label>
+            <input type="password" placeholder="Enter Password" name="password">
+            <br>
+            <label for="mobile number"><b>Mobile Number:</b></label>
+<input type="text" placeholder="Enter number" name="mobilenumber" >
+<br>
+<label for="Name:"><b>Name:</b></label>
+<input type="text" placeholder="Enter Text" name="username" >
+<br>
+<label for="AGE:"><b>AGE:</b></label>
+<input type="text" placeholder="Enter Text"  id="AGE" >
+<br>
+
+            
+            <p>By creating an account you agree to our <a href="#"
+            style="color:yellow">Terms & Privacy</a><p>
+               <button onclick="document.location='file:///D:/capestone/honeybeehomepage.html'">cancel</button>
+                <button type="submit" class="signup">Sign Up</button>
+        </form>
+    </body>
+</html>
+    
